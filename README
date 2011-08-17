@@ -1,0 +1,36 @@
+StagedIT
+A 3D World Editor for openGL using lwjgl!
+
+Installation:
+
+To install simply compile the java code.
+There is an ANT script for compiling every thing and makeing an jar file!
+
+It's highly recomended you compile thru ANT.
+If ANT is installed on your computer all you need to do to install it is to browse to the root dir
+for StagedIT in your favorite terminal and write ant.
+
+This will compile everything and jar it.
+
+If you don't know how to intall ant, google how to install ant or compile your self with the right classpaths!
+
+Libraries used:
+- lwjgl	(Included in this dist)
+- Slick (Included in this dist)
+
+
+To start the program using the jar write:
+If your on a Mac:
+java -Djava.library.path=./lib/lwjgl/native/macosx/ -jar StagedIT.jar
+
+If your on Windows:
+java -Djava.library.path=./lib/lwjgl/native/windows/ -jar StagedIT.jar
+
+If your on a Linux:
+java -Djava.library.path=./lib/lwjgl/native/linux/ -jar StagedIT.jar
+
+If your on a Solaris:
+java -Djava.library.path=./lib/lwjgl/native/linux/ -jar StagedIT.jar
+
+if you'r on a Mac you can just execute the execute.bash file thats in the root dir.
+

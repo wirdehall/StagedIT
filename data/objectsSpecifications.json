@@ -1,0 +1,69 @@
+{
+	StageObjects: [
+		{
+			name: "cube",
+			surfaces: [
+				{
+					texture: "data/Mud.bmp",
+					comment: "FrontSurface",
+					vertices: [
+						{x: -1, y: -1, z: 1, u: 0, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y: -1, z: 1, u: 1, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y:  1, z: 1, u: 1, v: 0, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y:  1, z: 1, u: 0, v: 0, r: 1, g: 1, b: 1, a: 1}
+					]
+				},
+				{
+					texture: "data/Mud.bmp",
+					comment: "RightSurface",
+					vertices: [
+						{x:  1, y: -1, z:  1, u: 0, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y: -1, z: -1, u: 1, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y:  1, z: -1, u: 1, v: 0, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y:  1, z:  1, u: 0, v: 0, r: 1, g: 1, b: 1, a: 1}
+					]
+				},
+				{
+					texture: "data/Mud.bmp",
+					comment: "BackSurface",
+					vertices: [
+						{x:  1, y: -1, z: -1, u: 0, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y: -1, z: -1, u: 1, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y:  1, z: -1, u: 1, v: 0, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y:  1, z: -1, u: 0, v: 0, r: 1, g: 1, b: 1, a: 1}
+					]
+				},
+				{
+					texture: "data/Mud.bmp",
+					comment: "LeftSurface",
+					vertices: [
+						{x: -1, y: -1, z: -1, u: 0, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y: -1, z:  1, u: 1, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y:  1, z:  1, u: 1, v: 0, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y:  1, z: -1, u: 0, v: 0, r: 1, g: 1, b: 1, a: 1}
+					]
+				},
+				{
+					texture: "data/Mud.bmp",
+					comment: "TopSurface",
+					vertices: [
+						{x: -1, y: 1, z: -1, u: 0, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y: 1, z: -1, u: 1, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y: 1, z:  1, u: 1, v: 0, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y: 1, z:  1, u: 0, v: 0, r: 1, g: 1, b: 1, a: 1}
+					]
+				},
+				{
+					texture: "data/Mud.bmp",
+					comment: "BottomSurface",
+					vertices: [
+						{x: -1, y: -1, z: -1, u: 0, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y: -1, z: -1, u: 1, v: 1, r: 1, g: 1, b: 1, a: 1},
+						{x:  1, y: -1, z:  1, u: 1, v: 0, r: 1, g: 1, b: 1, a: 1},
+						{x: -1, y: -1, z:  1, u: 0, v: 0, r: 1, g: 1, b: 1, a: 1}
+					]
+				},
+			],
+		}
+	]
+}
