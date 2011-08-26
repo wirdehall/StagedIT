@@ -16,7 +16,7 @@ public class Stage {
 		this.stageModel = new model.Stage();
 	}
 	
-	public boolean run() {
+	public void run() {
 		boolean endGame = false;
 		boolean movingCamera = false;
 		float lastMouseX = 0.0f;
@@ -120,8 +120,8 @@ public class Stage {
 				}
 			}
 			this.stageModel.tick();
-			this.stageView.render();
+			this.stageView.render(stageModel.getStageObjects());
 		}
-		return false;
+		Display.destroy();
 	}
 }

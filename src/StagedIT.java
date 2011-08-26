@@ -20,12 +20,7 @@ public class StagedIT {
 	}
 
 	public void run() {
-		while(!Display.isCloseRequested()) {
-			if(!stage.run()) {
-				break;
-			}
-		}
-		Display.destroy();
+		stage.run();
 	}
 	//TODO: Läs av argumenten och skicka in dem till stage i form av vilken fil du vill editera.
 	public static void main(String[] argv) {

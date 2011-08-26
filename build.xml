@@ -20,7 +20,7 @@
 	<target name="compile" depends="init"
 		description="compile the source " >
 		<!-- Compile the java code from ${src} into ${build} -->
-		<javac classpath="./lib/lwjgl/lwjgl.jar;./lib/lwjgl/lwjgl_util.jar;./lib/slick/slick.jar" srcdir="${src}" destdir="${bin}"/>
+		<javac classpath="./lib/lwjgl/lwjgl.jar;./lib/lwjgl/lwjgl_util.jar;./lib/slick/slick.jar;./lib/google-gson-1.7.1/gson-1.7.1.jar" srcdir="${src}" destdir="${bin}"/>
 	</target>
 
 	<target name="jar" depends="compile"
@@ -28,7 +28,7 @@
 		<jar jarfile="StagedIT.jar" basedir="${bin}">
 			<manifest>
 				<attribute name="Main-Class" value="StagedIT" />
-				<attribute name="Class-Path" value="./lib/lwjgl/lwjgl.jar ./lib/lwjgl/lwjgl_util.jar ./lib/slick/slick.jar" />
+				<attribute name="Class-Path" value="./lib/lwjgl/lwjgl.jar ./lib/lwjgl/lwjgl_util.jar ./lib/slick/slick.jar ./lib/google-gson-1.7.1/gson-1.7.1.jar" />
 			</manifest>
 		</jar>
 		<chmod file="StagedIT.jar" perm="755"/>

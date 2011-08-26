@@ -7,7 +7,7 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.util.glu.GLU.*;
 import org.newdawn.slick.*;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import model.*;
 
 public class Stage {
@@ -43,12 +43,16 @@ public class Stage {
 		}*/
 	}
 
-	public void render() {
+	public void render(LinkedList<StageObject> stageObjects) {
 		// render OpenGL here
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 		glLoadIdentity(); // Reset current matrix (Modelview)
+		
+		for(model.StageObject stageObject : stageObjects) {
+			stageObject.render();
+		}
 		
 /*		stage.render();
 		
